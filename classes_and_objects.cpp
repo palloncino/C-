@@ -5,12 +5,14 @@ class Person {
   public:
     int age;
     string name;
+    void sayMyName() {
+      cout << "Hi, my name is " + name;
+    }
 };
 
 int main() {
   Person Antonio;
-  Antonio.age = 26;
   Antonio.name = "Antonio";
-  cout << Antonio.name;
+  Antonio.sayMyName();
   return 0;
 };
